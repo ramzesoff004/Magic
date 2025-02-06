@@ -15,20 +15,6 @@ class Person:
     def __gt__(self, other):
         return self.age > other.age
 
-
-# p1 = Person("Alice", 25)
-# p2 = Person("Bob", 30)
-# p3 = Person("Alice", 25)
-# print(p1 == p3)
-# print(p1 == p2)
-# print(p1 < p2)
-# print(p1 > p2)
-# print(p2 > p1)
-
-
-# p = Person("Alice", 25)
-# print(p)
-
 class Collection:
     def __init__(self, people: list):
         self.people = people
@@ -48,10 +34,3 @@ class Collection:
 
     def __contains__(self, name):
         return any(x.name == name for x in self.people)
-
-
-# c = Collection([Person("Alice", 25), Person("Bob", 30)])
-# print(len(c))
-# c = c + Person("Charlie", 22)
-# print(len(c))
-
